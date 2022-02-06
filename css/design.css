@@ -1,0 +1,32 @@
+.design {
+  background-color: #bf1d56;
+  margin: 6rem 0;
+  padding: 6rem 0;
+}
+.design-child {
+  position: relative;
+  padding: 3rem 2rem;
+  border-radius: 6px;
+  background: #db3972;
+}
+
+.design-child img {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  max-width: 12rem;
+}
+
+.caourlsel {
+  margin: 3rem auto;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+
+@media (max-width:800px){
+  .design {
+    
+  }
+}

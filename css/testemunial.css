@@ -1,0 +1,68 @@
+.testemunial {
+  margin: 6rem 0;
+}
+.teste {
+  max-width: 600px;
+  margin: 3rem auto;
+  display: none;
+}
+
+.teste.ative {
+  display: block;
+  animation: show-left 0.3s;
+}
+
+.teste p {
+  line-height: 2;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+.testemunial h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.teste-grumb {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+  justify-content: space-between;
+  background: #be2158;
+  border: 2px solid #b61c52;
+  border-radius: 6px;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.teste-grumb li {
+  padding: 1.5rem;
+  cursor: pointer;
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teste-grumb li.ative {
+  background-color: #ffc351;
+  animation: show-left 0.3s;
+}
+
+.testemunial-perfil {
+  margin: 3rem auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.testemunial-perfil img {
+  margin-right: 0.6rem;
+  max-width: 3rem;
+}
+.testemunial-perfil div span {
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-family: 'Fira Sans', sans-serif;
+}

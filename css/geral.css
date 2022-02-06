@@ -1,0 +1,162 @@
+html,
+body,
+h1,
+section,
+h2,
+header,
+h3,
+h4,
+h5,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #db3972;
+  color: whitesmoke;
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  display: block;
+}
+ul {
+  list-style: none;
+}
+
+p {
+  font-weight: normal;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 0.6rem;
+}
+
+button {
+  border: none;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.6rem;
+}
+.modal-container.ative {
+  display: flex;
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes show-left {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.modal {
+  animation: show-up 0.3s forwards;
+  color: #252525;
+  display: grid;
+  max-width: 500px;
+  width: 100%;
+  z-index: 1000;
+  gap: 0.6rem;
+  padding: 2rem;
+  border-radius: 3px;
+  background: white;
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.6);
+  border: 4px solid #db3972;
+  position: relative;
+}
+
+.modal span {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: -1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  right: -1rem;
+  border: 4px solid #db3972;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+.modal input {
+  padding: 0.6rem;
+}
+.modal button {
+  padding: 0.6rem;
+  background-color: #db3972;
+  color: white;
+  cursor: pointer;
+}
+
+.links-navbar-left {
+  position: fixed;
+  top: 15rem;
+  left: 4rem;
+  display: grid;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.links-navbar-left li a {
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #bf1d56;
+  border: 2px solid #feb246;
+}

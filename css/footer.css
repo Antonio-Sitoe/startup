@@ -1,0 +1,11 @@
+footer {
+  padding: 1rem 0 0 ;
+  background: #bf1d56;
+}
+.copy {
+  padding: 1rem 0;
+  background: #aa1248;
+}
+footer p {
+  text-align: right;
+}

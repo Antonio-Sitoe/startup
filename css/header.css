@@ -1,0 +1,106 @@
+.navbar {
+  margin: 3rem 0;
+}
+
+.logo {
+  width: 100px;
+}
+.links {
+  gap: 0.5rem;
+}
+.links li a {
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.links li a::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border: 50%;
+  display: block;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  background-color: #ffc351;
+}
+
+.login {
+  gap: 0.6rem;
+}
+
+.login li a {
+  padding: 0.6rem 1rem;
+  border: 2px solid #d13068;
+  border-radius: 6px;
+}
+.login li a:hover {
+  border: 2px solid #f56217;
+}
+
+.sigup {
+  padding: 0.8rem 1.3rem !important;
+  background-color: #ffc351;
+  border: none !important;
+  font-size: 0.9rem;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+}
+[data-menu] {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  background: #bf1d56;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  font-family: 'Fira Sans', sans-serif;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: bold;
+}
+[data-menu] img {
+  margin-right: 0.1rem;
+}
+
+@media (max-width: 800px) {
+  header {
+    margin: 0;
+    padding: 0;
+    background-color: #ffc351;
+  }
+  .navbar {
+    padding: 1rem 0;
+    margin: 0;
+    background-color: #ffc351;
+  }
+  .nav {
+    display: grid;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 4rem;
+    right: 0px;
+    background: #bf1d56;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .nav.ative {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: hidden;
+  }
+  .navbar .nav ul {
+    display: grid;
+    gap: 0.6rem;
+    text-align: center;
+  }
+
+  [data-login] {
+    margin: 1.5rem 0;
+  }
+  [data-menu] {
+    display: flex;
+  }
+}
